@@ -2,6 +2,13 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 function Nav() {
+  const handleButtonClick = () => {
+    const coursCardElement = document.querySelector('.cours');
+
+    if (coursCardElement) {
+      coursCardElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <>
       <nav className="navbar navbar-expand-lg ">
@@ -85,7 +92,7 @@ function Nav() {
             </ul>
             <form className="d-flex" role="search"></form>
           </div>
-          <button className="btn button-cours" type="submit">
+          <button onClick={handleButtonClick} className="btn button-cours" type="submit">
             COURS
           </button>
           <button
