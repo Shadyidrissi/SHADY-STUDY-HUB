@@ -2,13 +2,25 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 function Nav() {
-  const handleButtonClick = () => {
-    const coursCardElement = document.querySelector('.cours');
-
-    if (coursCardElement) {
-      coursCardElement.scrollIntoView({ behavior: 'smooth' });
+  const handlButton = (props, event) => {
+    // Prevent the default behavior of the anchor tag
+    event.preventDefault();
+  
+    const coursElement = document.querySelector('.cours');
+    const contactElement = document.querySelector('.contact');
+    const aboutElement = document.querySelector('#FF');
+  
+    if (props === 'cours' && coursElement) {
+      coursElement.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (props === 'contact' && contactElement) {
+      contactElement.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (props === 'about' && aboutElement) {
+      aboutElement.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  
   return (
     <>
       <nav className="navbar navbar-expand-lg ">
@@ -39,12 +51,12 @@ function Nav() {
           >
             <ul className="navbar-nav nav-items  mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="#">
+                <a onClick={(e) => handlButton('about', e)} className="nav-link " aria-current="page" href="#">
                   ABOUT
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="#">
+                <a onClick={(e) => handlButton('contact', e)} className="nav-link " aria-current="page" href="#">
                   CONTACT
                 </a>
               </li>
@@ -92,11 +104,11 @@ function Nav() {
             </ul>
             <form className="d-flex" role="search"></form>
           </div>
-          <button onClick={handleButtonClick} className="btn button-cours" type="submit">
+          <button onClick={(e) => handlButton('cours', e)} className="btn button-cours" type="submit">
             COURS
           </button>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -104,7 +116,7 @@ function Nav() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
         </div>
       </nav>

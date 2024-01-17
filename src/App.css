@@ -56,6 +56,7 @@ nav {
 .button-cours:hover {
   background-color: var(--color-yellow-dark);
 }
+
 /* ? END NAV BAR */
 /* ? INTRO */
 #image {
@@ -116,6 +117,37 @@ nav {
 /* hr{
   margin: 0 40px;
 } */
+@media (min-width:1033px ) and (max-width: 1287px) {
+  .intro-text {
+    margin: 0 50px;
+    color: var(--color-black);
+  }
+  .intro-text h1 {
+    font-weight: 800;
+    font-size: 28px;
+  }
+  .intro-text h4 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+}
+@media (min-width: 930px) and (max-width:1033px ) {
+  .intro-text {
+    margin:0 10px 0 30px;
+  }
+  .intro-text h1 {
+    font-weight: 700;
+    font-size: 26px;
+  }
+  .intro-text h4 {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .test  img{
+    width: 400px;
+    margin: 0px;
+  }
+}
 /* ? END INTRO */
 /* ? ABOUT ME*/
 .about-me {
@@ -142,6 +174,12 @@ nav {
   rotate: -90deg;
   margin-top: -20px;
   padding: 0;
+}
+@media (min-width: 930px) and (max-width:1033px ) {
+  .about-me img{
+    width: 120px;
+    margin-top: -30px;
+  }
 }
 /* ? END ABOUT ME*/
 /* ? COURS DIV */
@@ -224,6 +262,60 @@ nav {
   font-weight: 800;
   font-size: 16px;
 }
+@media (min-width:1033px ) and (max-width: 1287px) {
+  .item-cours div ul{
+    font-weight: 500;
+    margin-top: 5px;
+  }
+  
+  .item-cours div ul li:last-child{
+    margin-left: 5px;  
+  }
+  .item-cours div h5{
+    width: 90%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+  .card-image{
+    margin-right: 5px;
+  }
+  .item-cours{
+    margin-top: 20px;  
+    width: 45%;  
+  }
+}
+@media (min-width: 930px) and (max-width:1033px ) {
+  .item-cours div ul{
+    font-weight: 400;
+    margin-top: 5px;
+    font-size: 14px;  
+}
+  
+  .item-cours div ul li:last-child{
+    margin-left: 2px;  
+  }
+  .item-cours div h5{
+    width: 90%;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .card-image{
+    margin-right: 5px;
+  }
+  .item-cours{
+    margin-top: 20px;  
+    width: 45%;  
+  }
+}
+@media (min-width: 930px){
+  .item-cours div ul{
+    font-weight: 400;
+    margin-top: 5px;
+    font-size: 12px;  
+}
+}
 /* ? END COURS DIV */
 /* ? GENE */
 #tv {
@@ -263,6 +355,26 @@ nav {
   justify-content: center;
   font-size: 18px;
   font-weight: 600;
+}
+@media (min-width:1033px ) and (max-width: 1287px) {
+  #tv {
+    height: 180px;
+  }
+  .gene-info p{
+    width: 45%;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 930px) and (max-width:1033px ) {
+  #tv {
+    height: 170px;
+  }
+  .gene-info p{
+    width: 45%;
+    font-size: 15px;
+    font-weight: 600;
+  }
 }
 /* ? END GENE */
 /* ? CONTACT */
@@ -323,5 +435,44 @@ nav {
   text-align: center;
   margin: 20px 100px;
   font-weight: 500;
+}
+@media (min-width:1033px ) and (max-width: 1287px) {
+  .contact{
+    margin:  10px 20px 20px 50px;
+    width: 90%;
+    border-radius: 10px;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 930px) and (max-width:1033px ) {
+  .contact{
+    margin:  10px 20px 20px 50px;
+    width: 90%;
+    border-radius: 10px;
+    padding-bottom: 30px;
+  }
+  .contact-gmail button,.contact-whatsapp button{
+    border: none;
+    color: var(--color-black);
+    background-color: #f6d776;
+    border-radius: 10px;
+    padding: 2px 5px ;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .contact-para h3{
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .contact-para h5{
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: lowercase;
+  }
+  .contact-icon{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
 }
 /* ? END CONTACT */
