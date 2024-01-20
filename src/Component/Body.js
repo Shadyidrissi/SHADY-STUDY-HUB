@@ -6,9 +6,21 @@ function AboutMe() {
     <div className="about-me">
       <h2>WELCOME</h2>
       <p>
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in massa
-        egestas mollis varius; dignissim elementum. Mollis tincidunt mattis
-        hendrerit dolor eros enim, nisi ligula ornare. Hendrerit
+        Hey, I'm Shady, your classmate and the brain behind this innovative
+        study platform. As a passionate developer and designer, I've crafted
+        this website with a vision to revolutionize how we learn and
+        collaborate. At Shady's Study Hub, my dual expertise in development and
+        design merges seamlessly to provide an intuitive and visually appealing
+        learning experience. Navigating through the website is not just about
+        accessing study materials; it's an immersive journey designed to enhance
+        comprehension and foster collaboration among classmates. So, dive into
+        Shady's Study Hub, where my passion for development and design converges
+        to make your learning journey not only effective but enjoyable. Let's
+        elevate our academic experience together! As a developer, I understand
+        the importance of efficiency and accessibility. That's why the website
+        boasts responsive design, ensuring you can seamlessly access it from any
+        device, be it your laptop, tablet, or smartphone. My goal is to make
+        studying as flexible and convenient as possible.
       </p>
       <img src="https://i.ibb.co/jRxbYJq/Sing.png" alt="" />
     </div>
@@ -69,14 +81,11 @@ function GeneClimatique() {
       <h2>génie climatique</h2>
       <div className="gene-info">
         <p>
-          mattis hendrerit dolor eros enim, nisi ligula ornare. Hendrerit
-          parturient habitant pharetra rutrum gravida porttitor eros feugiat.
-          Mollis elit sodales taciti duis praesent id. Consequat urna vitae
-          morbi nunc congue mattis hendrerit dolor eros enim, nisi ligula
-          ornare. Hendrerit habitant pharetra rutrum gravida porttitor eros
-          feugiat. Mollis elit sodaleshabitant pharetra rutrum gravida porttitor
-          eros feugiat. Mollis elit sodaleshabitant pharetra rutrum gravida
-          porttitor eros feugiat. Mollis elit sodales
+          A Technicien Spécialisé Génie Climatique, or Specialized Technician in
+          Climate Engineering, plays a crucial role in the field of HVAC
+          (Heating, Ventilation, and Air Conditioning). These professionals are
+          adept at designing, installing, and maintaining climate control
+          systems to ensure optimal thermal comfort in various environments.
         </p>
         <img
           id="tv"
@@ -116,7 +125,7 @@ function Contact() {
           height="45"
           color="white"
           fill="currentColor"
-          className="bi bi-envelope"
+          className="bi bi-envelope email-icon"
           viewBox="0 0 16 16"
         >
           <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />

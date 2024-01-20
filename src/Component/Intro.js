@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import logo from "../../src/Images/filiere-image3-removebg-preview_auto_x2.png";
 
 const CountdownTimer = ({ targetTime }) => {
   const calculateTimeRemaining = () => {
     const now = new Date();
     const difference = targetTime - now;
-    
+
     const seconds = Math.floor((difference / 1000) % 60);
     const minutes = Math.floor((difference / 1000 / 60) % 60);
     const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
@@ -15,7 +15,7 @@ const CountdownTimer = ({ targetTime }) => {
       days,
       hours,
       minutes,
-      seconds
+      seconds,
     };
   };
 
@@ -31,28 +31,29 @@ const CountdownTimer = ({ targetTime }) => {
 
   return (
     <span>
-      {timeRemaining.days}d {timeRemaining.hours}h {timeRemaining.minutes}m {timeRemaining.seconds}s
+      {timeRemaining.days}d {timeRemaining.hours}h {timeRemaining.minutes}m{" "}
+      {timeRemaining.seconds}s
     </span>
   );
 };
 
 function Intro() {
   // Set the target time for the countdown (replace with your desired end time)
-  const targetTime = new Date('2024-06-06T00:00:00'); // Set your specific date and time here
+  const targetTime = new Date("2024-06-06T00:00:00"); // Set your specific date and time here
 
   return (
     <>
       <div className="test">
-      <div className="intro-text">
-          <h1>WELCOME TO <span id="brand">SHADY STUDY HUB</span> </h1>
+        <div className="intro-text">
+          <h1>
+            WELCOME TO <span id="brand">SHADY STUDY HUB</span>{" "}
+          </h1>
           <h4>
             {" "}
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in
-            massa egestas mollis varius; dignissim elementum. Mollis tincidunt
-            mattis hendrerit dolor eros enim, nisi ligula ornare. Hendrerit
-            parturient habitant pharetra rutrum gravida porttitor eros feugiat.
-            Mollis elit sodales taciti duis praesent id. Consequat urna vitae
-            morbi nunc congue.
+            Welcome to Shady's Study Hub! Hey there! I'm Shady, and I'm excited
+            to introduce you to my new website dedicated to making studying a
+            breeze for all my classmates. 🚀
+            
           </h4>
         </div>
         <img
@@ -62,21 +63,20 @@ function Intro() {
           id="image"
         />
       </div>
-        <div className="time">
-          <ul id="trening">
-            <li>TRENING (STAGE)</li>
-            <li>1/2/2024</li>
-            <li>1/4/2024</li>
-            {/* <li>6/1/2024</li> */}
-          </ul>
-          <ul id="FF">
-            <li>NATIONAL EXAM (FIN FORMATION)</li>
-            <li>
-              <CountdownTimer targetTime={targetTime} />
-            </li>
-          </ul>
-        </div>
-
+      <div className="time">
+        <ul id="trening">
+          <li>TRENING (STAGE)</li>
+          <li>1/2/2024</li>
+          <li>1/4/2024</li>
+          {/* <li>6/1/2024</li> */}
+        </ul>
+        <ul id="FF">
+          <li>NATIONAL EXAM (FIN FORMATION)</li>
+          <li>
+            <CountdownTimer targetTime={targetTime} />
+          </li>
+        </ul>
+      </div>
     </>
   );
 }

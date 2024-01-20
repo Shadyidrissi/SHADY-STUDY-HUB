@@ -49,8 +49,9 @@ nav {
 .button-cours {
   /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black; */
-  font-weight: 900;
+  font-weight: 700;
   color: var(--color-black);
+  font-size: 14px;
   border: 2px var(--color-black) solid;
 }
 .button-cours:hover {
@@ -130,8 +131,12 @@ nav {
     font-weight: 600;
     font-size: 24px;
   }
+  .intro-text {
+    margin: 0 50px;
+    color: var(--color-black);
+  }
 }
-@media (min-width: 930px) and (max-width:1033px ) {
+@media (min-width: 830px) and (max-width:1033px ) {
   .intro-text {
     margin:0 10px 0 30px;
   }
@@ -147,11 +152,70 @@ nav {
     width: 400px;
     margin: 0px;
   }
+  .intro-text {
+    margin: 0 40px;
+    color: var(--color-black);
+  }
+}
+@media (min-width: 300px) and (max-width:830px ) {
+  .test  img{
+    visibility: hidden;
+    position: absolute;
+  }
+  .intro-text {
+    margin: 0 20px;
+  }
+  .intro-text h1 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .intro-text h1 span{
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .intro-text h4 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .time {
+    width: 98%;
+    border-radius: 5px;
+    margin: 0 1%;
+    margin-top: -10px;
+    height: auto;
+    color: var(--color-black);
+    background: rgba(123, 150, 255, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.6px);
+    -webkit-backdrop-filter: blur(8.6px);
+  }
+  #trening {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  #FF {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 11px;
+  }
 }
 /* ? END INTRO */
 /* ? ABOUT ME*/
 .about-me {
-  margin-top: 70px;
+  margin-top: 100px;
   text-align: center;
   width: 100%;
 }
@@ -179,6 +243,22 @@ nav {
   .about-me img{
     width: 120px;
     margin-top: -30px;
+  }
+}
+@media (min-width: 300px) and (max-width:830px ) {
+  .about-me img{
+    width: 120px;
+    margin-top: -30px;
+  }
+  .about-me p {
+    width: 80%;
+    display: flex;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 10%;
+    align-items: center;
+    justify-content: center;
   }
 }
 /* ? END ABOUT ME*/
@@ -255,12 +335,14 @@ nav {
   border-radius: 50px;
   background-color: var(--color-white);
   align-items: center;
-
 }
 .item-cours div h5 span{
   color: var(--color-black);
   font-weight: 800;
   font-size: 16px;
+}
+.item-cours div h5 span{
+color: var(--color-white);
 }
 @media (min-width:1033px ) and (max-width: 1287px) {
   .item-cours div ul{
@@ -315,6 +397,138 @@ nav {
     margin-top: 5px;
     font-size: 12px;  
 }
+}
+@media (min-width:334px) and (max-width:830px ) {
+  .cours{
+    background-color: var(--color-grey);
+    margin:  10px 1%;
+    width: 98%;
+    border-radius: 10px;
+  }
+  .item-cours div ul{
+    font-weight: 700;
+    margin-top: 5px;
+    font-size: 8px;  
+    width: 100%;
+  }
+  .item-cours div ul li:last-child{
+    margin-left: 2px;  
+  }
+  .item-cours div h5{
+    width: 90%;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .card-image{
+    margin-right: 5px;
+  }
+  .item-cours{
+    margin-top: 20px;  
+    width: 45%;  
+  }
+  .items-cours{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;  
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .item-cours{
+    background-color: #6da4aa75;
+    margin-top: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    width: 90%;  
+    height: auto;
+    justify-content: space-around;
+    color: var(--color-black);
+    /* background: rgba(123, 150, 255, 0.27); */
+    border-radius: 10px;
+  }
+  .item-cours div h5 span{
+    color: var(--color-black);
+    font-weight: 800;
+    font-size: 12px;
+  }
+  .item-cours div h5 span:hover{
+    color: var(--color-white);
+  }
+  .card-image img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: var(--color-white);
+    align-items: center;
+  }
+}
+@media (min-width: 290px) and (max-width:333px ) {
+  .item-cours div ul{
+    font-size: 7px;  
+    width: 100%;
+  }
+  .cours{
+    background-color: var(--color-grey);
+    margin:  10px 1%;
+    width: 98%;
+    border-radius: 10px;
+  }
+  .item-cours div ul li:last-child{
+    margin-left: 2px;  
+  }
+  .item-cours div h5{
+    width: 90%;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .card-image{
+    margin-right: 5px;
+  }
+  .item-cours{
+    margin-top: 20px;  
+    width: 45%;  
+  }
+  .items-cours{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;  
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .item-cours{
+    background-color: #6da4aa75;
+    margin-top: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    width: 90%;  
+    height: auto;
+    justify-content: space-around;
+    color: var(--color-black);
+    /* background: rgba(123, 150, 255, 0.27); */
+    border-radius: 10px;
+  }
+  .item-cours div h5 span{
+    color: var(--color-black);
+    font-weight: 800;
+    font-size: 12px;
+  }
+  .item-cours div h5 span:hover{
+    color: var(--color-white);
+  }
+  .card-image img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: var(--color-white);
+    align-items: center;
+  }
 }
 /* ? END COURS DIV */
 /* ? GENE */
@@ -373,6 +587,19 @@ nav {
   .gene-info p{
     width: 45%;
     font-size: 15px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 300px) and (max-width:830px ) {
+  #tv{
+    visibility: hidden;
+    position: absolute;
+  }
+  .gene-info p{
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
     font-weight: 600;
   }
 }
@@ -475,4 +702,113 @@ nav {
     justify-content: center;
   }
 }
+@media (min-width: 300px) and (max-width:830px ) {
+  .contact{
+    margin:  10px 20px 20px 20px;
+    width: 90%;
+    border-radius: 10px;
+    padding-bottom: 30px;
+  }
+  .contact-info{
+    margin-top: 20px;
+  }
+  /* .contact-gmail button,.contact-whatsapp button{
+    border: none;
+    color: var(--color-black);
+    background-color: #f6d776;
+    border-radius: 10px;
+    padding: 2px 5px ;
+    font-weight: 700;
+    font-size: 16px;
+  } */
+  .contact h2{
+    text-align: center;
+    padding-top: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  .contact-whatsapp,.contact-gmail{
+    width: 96%;
+    background-color: var(--color-yellow-light);
+    margin: 0 2%;
+    margin-top: 50px;
+    border-radius: 10px;
+    height: auto;
+    align-items: center;
+    display: block;
+    align-items: center;
+  }
+  .contact-gmail button,.contact-whatsapp button{
+    border: none;
+    color: var(--color-black);
+    background-color: #f6d776;
+    border-radius: 10px;
+    padding: 5px 10px ;
+    font-weight: 700;
+  }
+  .contact-para h3{
+    font-weight: 700;
+    font-size: 12px;
+  }
+  /* .contact-para h5{
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: lowercase;
+  } */
+  .contact-icon{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .contact-icon svg{
+    width: 40px;
+  }
+  .contact-para h3{
+    visibility: hidden;
+    position: absolute;
+  }
+  .whatsapp-icon{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .email-icon{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+  }
+  .contact-para h5{
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+    text-transform: lowercase;
+  }
+  .contact-gmail button,.contact-whatsapp button{
+    border: none;
+    color: var(--color-black);
+    background-color: #f6d776;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 2px 5px ;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .contact-paragraph h4{
+    text-align: center;
+    margin: 15px 10px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+
 /* ? END CONTACT */
