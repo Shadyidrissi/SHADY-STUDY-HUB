@@ -1,6 +1,6 @@
 import React from "react";
 import Cours_Name_Data from "../Data/Cours_name_data";
-import { Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 
 function AboutMe() {
   return (
@@ -50,28 +50,26 @@ function Cours() {
           <img src="" alt="" />
           </div>
         </div> */}
-
-        {Cours_Name_Data.map((i) => {
-          <>
-            <div className="iteam-cours">
-              <div>
-                <ul>
-                  <li>{i.cours}</li>
-                  <li>{i.teatcher}</li>
-                </ul>
-                <h5>
-                  {i.description}
-                  <span>
-                    <a href={i.link}>READ MORE</a>
-                  </span>
-                </h5>
-              </div>
+        {Cours_Name_Data.map((i) => (
+          <div className="item-cours" key={i.id}>
+            <div>
+              <ul>
+                <li>{i.cours}</li>
+                <li>{i.teatcher}</li>
+              </ul>
+              <h5>
+                {i.description}
+                <span>
+                  <a href={i.link}> ENTERY</a>{" "}
+                </span>
+              </h5>
             </div>
             <div className="card-image">
-              <img src={i.image} alt="image cours" />
+              <img src={i.image} alt="" />
             </div>
-          </>;
-        })}
+          </div>
+        ))}
+
         {/* END ITEM */}
       </div>
     </div>

@@ -993,25 +993,6 @@ color: var(--color-white);
 
 
 
-{Cours_Name_Data.map((i) => (
-  <div className="item-cours" key={i.id}>
-    <div>
-      <ul>
-        <li>{i.cours}</li>
-        <li>{i.teatcher}</li>
-      </ul>
-      <h5>
-        {i.description}
-        <span>
-          <a href={i.link}> ENTERY</a>{" "}
-        </span>
-      </h5>
-    </div>
-    <div className="card-image">
-      <img src={i.image} alt="" />
-    </div>
-  </div>
-))}
 
 
 
