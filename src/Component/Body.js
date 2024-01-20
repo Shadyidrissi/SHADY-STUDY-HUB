@@ -1,5 +1,6 @@
 import React from "react";
 import Cours_Name_Data from "../Data/Cours_name_data";
+import {  Link } from "react-router-dom";
 
 function AboutMe() {
   return (
@@ -49,8 +50,8 @@ function Cours() {
           <img src="" alt="" />
           </div>
         </div> */}
-        {Cours_Name_Data.map((i, index) => (
-          <div className="item-cours" key={index}>
+        {Cours_Name_Data.map((i) => (
+          <div className="item-cours" key={i.id}>
             <div>
               <ul>
                 <li>{i.cours}</li>
