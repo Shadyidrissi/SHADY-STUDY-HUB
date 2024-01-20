@@ -21,18 +21,22 @@ function Page() {
       <div className="iteams">
         {/* <h1>COURS</h1> */}
         <div className="iteam">
-            kkd
+            <img src="" id="image-iteam" alt="" />
+            <div className="princip">
+              <h1>hello world</h1>
+              <p>on here descr</p>
+            </div>
+            <button className="button-trans"></button>
         </div>
-        <div className="iteam">
+        {/* <div className="iteam">
             kkd
         </div>
         <div className="iteam">
           
-            kkd
         </div>
         <div className="iteam">
             kkd
-        </div>
+        </div> */}
       </div>
     </>
   );
