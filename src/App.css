@@ -1,6 +1,7 @@
 /* ! ROOT */
 * {
   a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     color: black;
     cursor: pointer;
@@ -819,12 +820,14 @@ color: var(--color-white);
   text-transform: uppercase;
   text-align: center;
   height: 70vh;
+  text-wrap: wrap;
+  overflow: hidden;
   background-color: var(--color-yellow-dark);
   align-items: center;
   display: flex;
   align-items: center;
   font-weight: 600;
-  margin: 0 0 10px 0;
+  margin: 0 5px 10px 5px;
 }
 /* * END first */
 /* * ul cours */
@@ -863,17 +866,39 @@ color: var(--color-white);
 /* * iteams cours */
 .iteams{
   background-color: var(--color-grey);
-  height: 100vh;
   display: flex;
   flex-wrap: wrap;
 }
 .iteam{
-  width: 23%;
-  background-color: var(--color-white);
+  width: 26%;
+  background-color: var(--color-bleu-light);
   padding: 10px;
   height: 200px;
-  margin: 10px 1%;
+  margin: 10px 10px;
+  border-radius: 10px;
+  text-align: center;
 }
+.princip p:nth-child(1){
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.princip p:nth-child(2){
+  font-weight: 600;
+  margin: 0px 0 5px 0 ;
+}
+.button-trans{
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-align: center;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+}
+
 /* * END iteams cours */
 /* ? End Cours */
 

@@ -23,10 +23,32 @@ function Page() {
         <div className="iteam">
             <img src="" id="image-iteam" alt="" />
             <div className="princip">
-              <h1>hello world</h1>
+              <p>hello world</p>
               <p>on here descr</p>
             </div>
-            <button className="button-trans"></button>
+            <button className="button-trans">tratuction</button>
+        </div>
+        </div>
+      <div className="iteams">
+        {/* <h1>COURS</h1> */}
+        <div className="iteam">
+            <img src="" id="image-iteam" alt="" />
+            <div className="princip">
+              <p>hello world</p>
+              <p>on here descr</p>
+            </div>
+            <button className="button-trans">tratuction</button>
+        </div>
+        </div>
+      <div className="iteams">
+        {/* <h1>COURS</h1> */}
+        <div className="iteam">
+            <img src="" id="image-iteam" alt="" />
+            <div className="princip">
+              <p>hello world</p>
+              <p>on here descr</p>
+            </div>
+            <button className="button-trans">tratuction</button>
         </div>
         {/* <div className="iteam">
             kkd
