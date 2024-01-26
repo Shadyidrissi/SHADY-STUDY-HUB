@@ -1,7 +1,7 @@
 const Cours_Data=[
     {
         id:'0',
-        title:'mcmmccm',
+        title:'Réseau Aéraulique',
         desc:'heloo world how are you bro i hope are you fine',
         data:{
             one:'mmm',
@@ -14,7 +14,7 @@ const Cours_Data=[
         },
     },{
         id:'1',
-        title:'mcmmccm',
+        title:'Réseau Aéraulique',
         desc:'heloo world how are you bro i hope are you fine',
         data:{
             one:'mmm',
@@ -27,7 +27,7 @@ const Cours_Data=[
         },
     },{
         id:'2',
-        title:'mcmmccm',
+        title:'Réseau Aéraulique',
         desc:'heloo world how are you bro i hope are you fine',
         data:{
             one:'mmm',
@@ -40,7 +40,7 @@ const Cours_Data=[
         },
     },{
         id:'3',
-        title:'mcmmccm',
+        title:'Regulation',
         desc:'heloo world how are you bro i hope are you fine',
         data:{
             one:'mmm',
@@ -53,7 +53,7 @@ const Cours_Data=[
         },
     },{
         id:'4',
-        title:'mcmmccm',
+        title:'Regulation',
         desc:'heloo world how are you bro i hope are you fine',
         data:{
             one:'mmm',
@@ -66,3 +66,4 @@ const Cours_Data=[
         },
     }
 ]
+export default Cours_Data

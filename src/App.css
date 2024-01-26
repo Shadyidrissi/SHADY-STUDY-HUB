@@ -551,6 +551,7 @@ color: var(--color-white);
 .gene{
   margin-bottom: 70px;
   padding-top: 50px;
+  /* display: flex; */
 }
 .gene h2{
   text-align: center;
@@ -820,7 +821,6 @@ color: var(--color-white);
   text-transform: uppercase;
   text-align: center;
   height: 70vh;
-  text-wrap: wrap;
   overflow: hidden;
   background-color: var(--color-yellow-dark);
   align-items: center;
@@ -828,6 +828,8 @@ color: var(--color-white);
   align-items: center;
   font-weight: 600;
   margin: 0 5px 10px 5px;
+  padding: 10px 20px;
+  word-break: break-all;
 }
 /* * END first */
 /* * ul cours */
@@ -845,10 +847,9 @@ color: var(--color-white);
   list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 90%;
 }
 .titles-cours ul li{
-  width: 15%;
+  margin-right: 10px;
   padding: 5px  10px ;
   text-align: center;
   font-weight: 800;
@@ -867,13 +868,16 @@ color: var(--color-white);
 .iteams{
   background-color: var(--color-grey);
   display: flex;
+  position: relative;
+  justify-content: center;
+  /* justify-content: space-evenly; */
   flex-wrap: wrap;
 }
 .iteam{
-  width: 26%;
   background-color: var(--color-bleu-light);
   padding: 10px;
-  height: 200px;
+  width: 30%;
+  min-height: 200px;
   margin: 10px 10px;
   border-radius: 10px;
   text-align: center;
@@ -898,7 +902,13 @@ color: var(--color-white);
   text-transform: uppercase;
   
 }
-
+#image-iteam{
+  width: 70%;
+  height: 150px;
+  background-color: #f1f1f1;
+  border: 2px solid black;
+  border-radius: 10px;
+}
 /* * END iteams cours */
 /* ? End Cours */
 

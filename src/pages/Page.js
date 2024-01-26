@@ -1,65 +1,80 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import Cours_Name_Data from "../Data/Cours_name_data";
 import Nav from "../Component/Nav";
 
-function Page() {
+
+
+
+
+
+
+const Page=() =>{
+  const { id } = useParams();
+  const [cours, setCours] = useState('Regulation');
+  const [show, setShow] = useState(null);
+  const handleClick =(e)=>{
+    setCours(e)
+    console.log(cours)
+  }
+  useEffect(() => {
+    if (id < 4) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  }, [id]);
+
   return (
     <>
-      <Nav title="" />
-      <p className="paragraph">
-        mammamamamamamamamamamamamamamammaammaammamamaamammaamam
-        mammamamamamamamamamamamamamamammaammaammamamaamammaamam
-        mammamamamamamamamamamamamamamammaammaammamamaamammaamam
-      </p>
-      <div className="titles-cours">
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-        </ul>
-      </div>
-      <div className="iteams">
-        {/* <h1>COURS</h1> */}
-        <div className="iteam">
-            <img src="" id="image-iteam" alt="" />
-            <div className="princip">
-              <p>hello world</p>
-              <p>on here descr</p>
+      {!show ? (
+        <div
+          style={{
+            color: "red",
+            fontSize: "52px",
+            fontWeight: 600,
+            textAlign: "center",
+            justifyContent: "center",
+            height: "100vh",
+            alignItems: "center",
+            display: "flex",
+          }}
+        >
+          This Id Not Defind 🚩
+        </div>
+      ) : (
+        <>
+          <Nav title="" />
+          <p className="paragraph">
+            {/* {console.log(isId)} */}
+            mammamamamamamamamamamamamamamammaammaammamamaamammaamam
+            mammamamamamamamamamamamamamamammaammaammamamaamammaamam
+            mammamamamamamamamamamamamamamammaammaammamamaamammaamam
+          </p>
+          <div className="titles-cours">
+            
+            {Cours_Name_Data.map((i) => (
+              <ul key={i.id}>
+                <li  onClick={() => handleClick(i.cours)}>{i.cours}</li>
+              </ul>
+            ))}
+            
+          </div>
+          <div className="iteams">
+            {/* start*/}
+            <div className="iteam">
+              <img src="" id="image-iteam" alt="" />
+              <div className="princip">
+                <p>hello world</p>
+                <p>on here descr</p>
+              </div>
+              <button className="button-trans">tratuction</button>
             </div>
-            <button className="button-trans">tratuction</button>
-        </div>
-        </div>
-      <div className="iteams">
-        {/* <h1>COURS</h1> */}
-        <div className="iteam">
-            <img src="" id="image-iteam" alt="" />
-            <div className="princip">
-              <p>hello world</p>
-              <p>on here descr</p>
-            </div>
-            <button className="button-trans">tratuction</button>
-        </div>
-        </div>
-      <div className="iteams">
-        {/* <h1>COURS</h1> */}
-        <div className="iteam">
-            <img src="" id="image-iteam" alt="" />
-            <div className="princip">
-              <p>hello world</p>
-              <p>on here descr</p>
-            </div>
-            <button className="button-trans">tratuction</button>
-        </div>
-        {/* <div className="iteam">
-            kkd
-        </div>
-        <div className="iteam">
-          
-        </div>
-        <div className="iteam">
-            kkd
-        </div> */}
-      </div>
+            {/* end */}
+           
+          </div>
+        </>
+      )}
     </>
   );
 }
