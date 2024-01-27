@@ -895,29 +895,33 @@ color: var(--color-white);
   font-weight: 600;
   margin: 0px 0 5px 0 ;
 }
-.button-div{
+.button{
   display: flex;
   justify-content: center;
-  margin: 5px 10px ;
-  
+  position: fixed;
+  z-index: 99;
 }
-.button-trans:hover{
-  background-color: brown;
-  color: white;
- }
+.button button{
+  z-index: 100;
+  margin-left: 30px;
+}
+#icon{
+  height: 30px;
+
+}
 .button-trans{
   border: none;
   border-radius: 5px;
-  width: 20%;
   justify-content: center;
   align-items: center;
   display: flex;
   text-align: center;
   font-size: 18px;
-  padding: 5px 10px;
+  padding: 15px 10px;
+  border-radius: 50%;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: #6da4aa;
+  background-color: brown;
 }
 #image-iteam{
   object-fit:cover;

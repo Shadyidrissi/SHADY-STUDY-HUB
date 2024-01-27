@@ -4,6 +4,10 @@ import Cours_Name_Data from "../Data/Cours_name_data";
 import Cours_Data from "../Data/Cours_data";
 import Nav from "../Component/Nav";
 import { ConstantColorFactor } from "three";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 
 const Page = () => {
   const { id } = useParams();
@@ -56,11 +60,16 @@ const Page = () => {
             mammamamamamamamamamamamamamamammaammaammamamaamammaamam
             mammamamamamamamamamamamamamamammaammaammamamaamammaamam
           </p>
-          <div className="button-div">
-            {!cours ?'':(
-              <button onClick={() => handelTraduction()} className="button-trans">
-              translation
-            </button>
+          <div className="button">
+            {!cours ? (
+              ""
+            ) : (
+              <button
+                onClick={() => handelTraduction()}
+                className="button-trans"
+              >
+                <FontAwesomeIcon id="icon" icon={faLanguage} />
+              </button>
             )}
           </div>
           <div className="titles-cours">
