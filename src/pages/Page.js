@@ -1,22 +1,27 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Cours_Name_Data from "../Data/Cours_name_data";
+import Cours_Data from "../Data/Cours_data";
 import Nav from "../Component/Nav";
+import { ConstantColorFactor } from "three";
 
-
-
-
-
-
-
-const Page=() =>{
+const Page = () => {
   const { id } = useParams();
-  const [cours, setCours] = useState('Regulation');
-  const [show, setShow] = useState(null);
-  const handleClick =(e)=>{
-    setCours(e)
-    console.log(cours)
-  }
+  const [cours, setCours] = useState("");
+  const [isData, setData] = useState([]);
+  const [show, setShow] = useState(true);
+  const [traduction, setTraduction] = useState(true);
+
+  const handelTraduction = () => {
+    setTraduction(!traduction);
+  };
+
+  const handleClick = (title) => {
+    setCours(title);
+    const filteredData = Cours_Data.filter((item) => item.title === title);
+    setData(filteredData);
+  };
+
   useEffect(() => {
     if (id < 4) {
       setShow(true);
@@ -40,7 +45,7 @@ const Page=() =>{
             display: "flex",
           }}
         >
-          This Id Not Defind 🚩
+          This Id Not Defined 🚩
         </div>
       ) : (
         <>
@@ -51,32 +56,41 @@ const Page=() =>{
             mammamamamamamamamamamamamamamammaammaammamamaamammaamam
             mammamamamamamamamamamamamamamammaammaammamamaamammaamam
           </p>
+          <div className="button-div">
+            {!cours ?'':(
+              <button onClick={() => handelTraduction()} className="button-trans">
+              translation
+            </button>
+            )}
+          </div>
           <div className="titles-cours">
-            
             {Cours_Name_Data.map((i) => (
               <ul key={i.id}>
-                <li  onClick={() => handleClick(i.cours)}>{i.cours}</li>
+                <li key={i.id} onClick={() => handleClick(i.cours, i.id)}>
+                  {i.cours}
+                </li>
               </ul>
             ))}
-            
           </div>
           <div className="iteams">
-            {/* start*/}
-            <div className="iteam">
-              <img src="" id="image-iteam" alt="" />
-              <div className="princip">
-                <p>hello world</p>
-                <p>on here descr</p>
+            {isData.map((data) => (
+              <div key={data.id} className="iteam">
+                {!data.image == "" ? (
+                  <img src={data.image} id="image-iteam" alt="" />
+                ) : (
+                  <div style={{ position: "absolute" }}></div>
+                )}
+                <div className="princip">
+                  <p>{data.title}</p>
+                  <p>{traduction ? data.Freanch : data.Arabic}</p>
+                </div>
               </div>
-              <button className="button-trans">tratuction</button>
-            </div>
-            {/* end */}
-           
+            ))}
           </div>
         </>
       )}
     </>
   );
-}
+};
 
 export default Page;
