@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Page from "./pages/Page";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap';
+import Contact_page from "./Component/Contact_page";
 // import Button from '@mui/material/Button';
 // import ButtonGroup from '@mui/material/ButtonGroup';
 // import Box from '@mui/material/Box';
@@ -22,7 +23,7 @@ import 'bootstrap/dist/js/bootstrap';
 function Home() {
   return (
     <>
-      <Nav />
+      <Nav ul="yes"/>
       <Intro />
       <Body />
       <Footer />
@@ -35,6 +36,7 @@ function App() {
       <Routes>
           <Route index element={< Home/>}/>
           <Route path="/cours/:id" element={<Page />} />
+          <Route path="/contact" element={<Contact_page/>} />
         {/* <Home/> */}
       </Routes>
     </BrowserRouter>

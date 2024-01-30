@@ -865,17 +865,19 @@ color: var(--color-white);
 }
 /* * END ul cours */
 /* * iteams cours */
-.iteams{
+/* ... (your existing styles) */
+
+.iteams {
   background-color: var(--color-grey);
   display: flex;
   position: relative;
   justify-content: center;
-  /* justify-content: space-evenly; */
   flex-wrap: wrap;
 }
-.iteam{
+
+.iteam {
   background-color: var(--color-bleu-light);
-  padding:  10px;
+  padding: 10px;
   width: 30%;
   min-height: 150px;
   align-items: center;
@@ -883,6 +885,18 @@ color: var(--color-white);
   border-radius: 10px;
   text-align: center;
 }
+
+/* Add align-self property to the .iteam class */
+.iteam:nth-child(odd) {
+  align-self: center; 
+}
+
+.iteam:nth-child(even) {
+  align-self: center; 
+}
+
+/* ... (your existing styles) */
+
 .princip  {
   align-items: center;
 }
@@ -907,7 +921,6 @@ color: var(--color-white);
 }
 #icon{
   height: 30px;
-
 }
 .button-trans{
   border: none;
@@ -933,141 +946,86 @@ color: var(--color-white);
 }
 /* * END iteams cours */
 /* ? End Cours */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ? Contact US */
+.contact-page {
+  padding: 50px 0;
+}
+
+.contact-page .heading h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+
+}
+
+.contact-page .heading h2 span {
+  /* color: var(--color-yellow-dark); */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--color-black);
+  color: transparent;
+}
+
+.contact-page .heading p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-black);
+  margin: 20px 0 60px;
+  padding: 0;
+}
+
+.contact-page .form-control {
+  padding: 25px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  border: 0;
+  border-radius: 10px;
+}
+
+.contact-page button.btn {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  background: var(--color-bleu-dark);
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.contact-page .title h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-page .title p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+  line-height: 1.6;
+  margin: 0 0 40px;
+}
+
+.contact-page .content .info {
+  margin-top: 30px;
+}
+.contact-page .content .info i {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  color: #02434b;
+  margin-right: 20px;
+  text-align: center;
+  width: 20px;
+}
+.contact-page .content .info h4 {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.contact-page .content .info h4 span {
+  font-size: 13px;
+  font-weight: 300;
+  color: #999999;
+}
+/* ? END Contact US */

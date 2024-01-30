@@ -1,31 +1,31 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
-function Nav() {
+function Nav(e) {
   const handlButton = (props, event) => {
     // Prevent the default behavior of the anchor tag
     event.preventDefault();
-  
-    const coursElement = document.querySelector('.cours');
-    const contactElement = document.querySelector('.contact');
-    const aboutElement = document.querySelector('#FF');
-  
-    if (props === 'cours' && coursElement) {
-      coursElement.scrollIntoView({ behavior: 'smooth' });
+
+    const coursElement = document.querySelector(".cours");
+    const contactElement = document.querySelector(".contact");
+    const aboutElement = document.querySelector("#FF");
+
+    if (props === "cours" && coursElement) {
+      coursElement.scrollIntoView({ behavior: "smooth" });
     }
-    if (props === 'contact' && contactElement) {
-      contactElement.scrollIntoView({ behavior: 'smooth' });
+    if (props === "contact" && contactElement) {
+      contactElement.scrollIntoView({ behavior: "smooth" });
     }
-    if (props === 'about' && aboutElement) {
-      aboutElement.scrollIntoView({ behavior: 'smooth' });
+    if (props === "about" && aboutElement) {
+      aboutElement.scrollIntoView({ behavior: "smooth" });
     }
   };
-  
+
   return (
     <>
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             <img
               id="brand"
               src="https://i.ibb.co/xht01t0/LOGO-removebg-preview.png"
@@ -45,27 +45,39 @@ function Nav() {
           > 
             <span class="navbar-toggler-icon"></span>
           </button> */}
-          <div
-            className="collapse navbar-collapse nav-item"
-            id="navbarSupportedContent"
-          >
-            <ul className="navbar-nav nav-items  mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a onClick={(e) => handlButton('about', e)} className="nav-link " aria-current="page" href="#">
-                  ABOUT
-                </a>
-              </li>
-              <li className="nav-item">
-                <a onClick={(e) => handlButton('contact', e)} className="nav-link " aria-current="page" href="#">
-                  CONTACT
-                </a>
-              </li>
-              {/* <li className="nav-item">
+          {e.ul == "yes" ? (
+            <>
+              <div
+                className="collapse navbar-collapse nav-item"
+                id="navbarSupportedContent"
+              >
+                <ul className="navbar-nav nav-items  mb-2 mb-lg-0">
+                  <li className="nav-item">
+                    <a
+                      onClick={(e) => handlButton("about", e)}
+                      className="nav-link "
+                      aria-current="page"
+                      href="#"
+                    >
+                      ABOUT
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a
+                      onClick={(e) => handlButton("contact", e)}
+                      className="nav-link "
+                      aria-current="page"
+                      href="#"
+                    >
+                      CONTACT
+                    </a>
+                  </li>
+                  {/* <li className="nav-item">
                 <a className="nav-link" href="#">
                   Link
                 </a>
               </li> */}
-              {/* <li className="nav-item dropdown">
+                  {/* <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -96,17 +108,47 @@ function Nav() {
                   </li>
                 </ul>
               </li> */}
-              {/* <li className="nav-item">
+                  {/* <li className="nav-item">
                 <a className="nav-link disabled" aria-disabled="true">
                   Disabled
                 </a>
               </li> */}
-            </ul>
-            <form className="d-flex" role="search"></form>
-          </div>
-          <button onClick={(e) => handlButton('cours', e)} className="btn button-cours" type="submit">
-            COURS
-          </button>
+                </ul>
+                <form className="d-flex" role="search"></form>
+              </div>
+              <button
+                onClick={(e) => handlButton("cours", e)}
+                className="btn button-cours"
+                type="submit"
+              >
+                COURS
+              </button>
+            </>
+          ) : e.ul == "no" ? (
+            <div
+              className="collapse navbar-collapse nav-item"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav nav-items  mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <a className="nav-link " href="/cours/0">
+                    FIN FORMATION
+                  </a>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <a href="/cours/1">
+              <button
+                // onClick={(e) => handlButton("cours", e)}
+                className="btn button-cours"
+                type="submit"
+              >
+                COURS
+              </button>
+            </a>
+          )}
+
           <button
             className="navbar-toggler"
             type="button"

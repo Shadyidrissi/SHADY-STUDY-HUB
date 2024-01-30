@@ -1,6 +1,6 @@
 import React from "react";
 import Cours_Name_Data from "../Data/Cours_name_data";
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function AboutMe() {
   return (
@@ -115,9 +115,11 @@ function Contact() {
         </svg>
         <div className="contact-para">
           <h3>WHATSAPP</h3>
-          <h5>MCMSLKMDLKVN VMDVMSDOVODV MVOPDMVPDOV SMMVOMV</h5>
+          <h5>Connect with me on WhatsApp for quick responses and support.</h5>
         </div>
-        <button>SEND MESSAGE</button>
+        <a href="https://wa.link/w4x4iu">
+          <button>SEND MESSAGE</button>
+        </a>
       </div>
       <div className="contact-gmail">
         <svg
@@ -133,9 +135,11 @@ function Contact() {
         </svg>
         <div className="contact-para">
           <h3>EMAIL</h3>
-          <h5>MCMSLKMDLKVN VMDVMSDOVODV MVOPDMVPDOV SMMVOMV</h5>
+          <h5>Drop me an email for any inquiries or information you need.</h5>
         </div>
-        <button>SEND MESSAGE</button>
+        <a href="/contact">
+          <button>SEND MESSAGE</button>
+        </a>
       </div>
       <div className="contact-info">
         <div className="contact-icon">
@@ -153,10 +157,12 @@ function Contact() {
         </div>
         <div className="contact-paragraph">
           <h4>
-            mattis hendrerit dolor eros enim, nisi ligula ornare. Hendrerit
-            parturient habitant pharetra rutrum gravida porttitor eros feugiat.
-            Mollis elit sodales taciti duis praesent id. Consequat urna vitae
-            morbi nunc congue.
+            Working Hours: 7/7 and 24/24 <br />
+            urgent matters, you can reach me anytime, even on weekends and
+            holidays. <br />
+            Feel free to send a message or email, and I'll respond as soon as
+            possible. <br />
+            For more detailed inquiries, I'm here to assist you!
           </h4>
         </div>
       </div>

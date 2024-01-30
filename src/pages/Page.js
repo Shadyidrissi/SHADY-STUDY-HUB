@@ -53,7 +53,7 @@ const Page = () => {
         </div>
       ) : (
         <>
-          <Nav title="" />
+          <Nav ul="no" />
           <p className="paragraph">
             {/* {console.log(isId)} */}
             mammamamamamamamamamamamamamamammaammaammamamaamammaamam
@@ -68,7 +68,7 @@ const Page = () => {
                 onClick={() => handelTraduction()}
                 className="button-trans"
               >
-                <FontAwesomeIcon id="icon" icon={faLanguage} />
+                <FontAwesomeIcon style={{color:'white'}} id="icon"  icon={faLanguage} />
               </button>
             )}
           </div>
