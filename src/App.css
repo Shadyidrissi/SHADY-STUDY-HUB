@@ -1,12 +1,13 @@
 /* ! ROOT */
 * {
-  a{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  a {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
     text-decoration: none;
     color: black;
     cursor: pointer;
   }
-  a:hover{
+  a:hover {
     color: white;
   }
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -119,7 +120,7 @@ nav {
 /* hr{
   margin: 0 40px;
 } */
-@media (min-width:1033px ) and (max-width: 1287px) {
+@media (min-width: 1033px) and (max-width: 1287px) {
   .intro-text {
     margin: 0 50px;
     color: var(--color-black);
@@ -137,9 +138,9 @@ nav {
     color: var(--color-black);
   }
 }
-@media (min-width: 830px) and (max-width:1033px ) {
+@media (min-width: 830px) and (max-width: 1033px) {
   .intro-text {
-    margin:0 10px 0 30px;
+    margin: 0 10px 0 30px;
   }
   .intro-text h1 {
     font-weight: 700;
@@ -149,7 +150,7 @@ nav {
     font-weight: 600;
     font-size: 22px;
   }
-  .test  img{
+  .test img {
     width: 400px;
     margin: 0px;
   }
@@ -158,8 +159,8 @@ nav {
     color: var(--color-black);
   }
 }
-@media (min-width: 300px) and (max-width:830px ) {
-  .test  img{
+@media (min-width: 300px) and (max-width: 830px) {
+  .test img {
     visibility: hidden;
     position: absolute;
   }
@@ -173,7 +174,7 @@ nav {
     text-align: center;
     margin-bottom: 50px;
   }
-  .intro-text h1 span{
+  .intro-text h1 span {
     font-size: 28px;
     margin-bottom: 10px;
   }
@@ -233,21 +234,21 @@ nav {
   align-items: center;
   justify-content: center;
 }
-.about-me img{
+.about-me img {
   width: 150px;
   position: relative;
   rotate: -90deg;
   margin-top: -20px;
   padding: 0;
 }
-@media (min-width: 930px) and (max-width:1033px ) {
-  .about-me img{
+@media (min-width: 930px) and (max-width: 1033px) {
+  .about-me img {
     width: 120px;
     margin-top: -30px;
   }
 }
-@media (min-width: 300px) and (max-width:830px ) {
-  .about-me img{
+@media (min-width: 300px) and (max-width: 830px) {
+  .about-me img {
     width: 120px;
     margin-top: -30px;
   }
@@ -264,33 +265,33 @@ nav {
 }
 /* ? END ABOUT ME*/
 /* ? COURS DIV */
-.cours{
+.cours {
   background-color: var(--color-grey);
-  margin:  10px 50px;
+  margin: 10px 50px;
   width: 90%;
   border-radius: 10px;
 }
-.cours h2{
+.cours h2 {
   text-align: center;
   padding-top: 40px;
   font-weight: 800;
 }
-.items-cours{
+.items-cours {
   margin-top: 30px;
   width: 100%;
-  display: flex;  
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-.item-cours{
+.item-cours {
   background-color: #6da4aa75;
   margin-top: 30px;
   border-radius: 20px;
   margin-bottom: 50px;
 
   display: flex;
-  width: 40%;  
+  width: 40%;
   height: auto;
   justify-content: space-around;
   color: var(--color-black);
@@ -300,15 +301,15 @@ nav {
   backdrop-filter: blur(8.6px);
   -webkit-backdrop-filter: blur(8.6px);
 }
-.item-cours div ul li{
+.item-cours div ul li {
   background-color: var(--color-bleu-dark);
-  padding: 5px 15px ;
+  padding: 5px 15px;
   border-radius: 20px;
   align-items: center;
   text-transform: uppercase;
   color: var(--color-white);
 }
-.item-cours div ul{
+.item-cours div ul {
   display: flex;
   font-weight: 600;
   list-style: none;
@@ -316,20 +317,20 @@ nav {
   align-items: center;
 }
 
-.item-cours div ul li:last-child{
-  margin-left: 10px;  
+.item-cours div ul li:last-child {
+  margin-left: 10px;
 }
-.item-cours div h5{
+.item-cours div h5 {
   width: 90%;
   margin-left: 15px;
   margin-bottom: 15px;
 }
-.card-image{
+.card-image {
   align-items: center;
   display: flex;
   margin-right: 10px;
 }
-.card-image img{
+.card-image img {
   width: 100px;
   height: 100px;
   border: none;
@@ -337,128 +338,128 @@ nav {
   background-color: var(--color-white);
   align-items: center;
 }
-.item-cours div h5 span{
+.item-cours div h5 span {
   color: var(--color-black);
   font-weight: 800;
   font-size: 16px;
 }
-.item-cours div h5 span{
-color: var(--color-white);
+.item-cours div h5 span {
+  color: var(--color-white);
 }
-@media (min-width:1033px ) and (max-width: 1287px) {
-  .item-cours div ul{
+@media (min-width: 1033px) and (max-width: 1287px) {
+  .item-cours div ul {
     font-weight: 500;
     margin-top: 5px;
   }
-  
-  .item-cours div ul li:last-child{
-    margin-left: 5px;  
+
+  .item-cours div ul li:last-child {
+    margin-left: 5px;
   }
-  .item-cours div h5{
+  .item-cours div h5 {
     width: 90%;
     margin-left: 15px;
     margin-bottom: 15px;
   }
-  .card-image{
+  .card-image {
     margin-right: 5px;
   }
-  .item-cours{
-    margin-top: 20px;  
-    width: 45%;  
+  .item-cours {
+    margin-top: 20px;
+    width: 45%;
   }
 }
-@media (min-width: 930px) and (max-width:1033px ) {
-  .item-cours div ul{
+@media (min-width: 930px) and (max-width: 1033px) {
+  .item-cours div ul {
     font-weight: 400;
     margin-top: 5px;
-    font-size: 14px;  
-}
-  
-  .item-cours div ul li:last-child{
-    margin-left: 2px;  
+    font-size: 14px;
   }
-  .item-cours div h5{
+
+  .item-cours div ul li:last-child {
+    margin-left: 2px;
+  }
+  .item-cours div h5 {
     width: 90%;
     font-size: 16px;
     font-weight: 600;
     margin-left: 10px;
     margin-bottom: 10px;
   }
-  .card-image{
+  .card-image {
     margin-right: 5px;
   }
-  .item-cours{
-    margin-top: 20px;  
-    width: 45%;  
+  .item-cours {
+    margin-top: 20px;
+    width: 45%;
   }
 }
-@media (min-width: 930px){
-  .item-cours div ul{
+@media (min-width: 930px) {
+  .item-cours div ul {
     font-weight: 400;
     margin-top: 5px;
-    font-size: 12px;  
+    font-size: 12px;
+  }
 }
-}
-@media (min-width:334px) and (max-width:830px ) {
-  .cours{
+@media (min-width: 334px) and (max-width: 830px) {
+  .cours {
     background-color: var(--color-grey);
-    margin:  10px 1%;
+    margin: 10px 1%;
     width: 98%;
     border-radius: 10px;
   }
-  .item-cours div ul{
+  .item-cours div ul {
     font-weight: 700;
     margin-top: 5px;
-    font-size: 8px;  
+    font-size: 8px;
     width: 100%;
   }
-  .item-cours div ul li:last-child{
-    margin-left: 2px;  
+  .item-cours div ul li:last-child {
+    margin-left: 2px;
   }
-  .item-cours div h5{
+  .item-cours div h5 {
     width: 90%;
     font-size: 12px;
     font-weight: 700;
     margin-left: 10px;
     margin-bottom: 10px;
   }
-  .card-image{
+  .card-image {
     margin-right: 5px;
   }
-  .item-cours{
-    margin-top: 20px;  
-    width: 45%;  
+  .item-cours {
+    margin-top: 20px;
+    width: 45%;
   }
-  .items-cours{
+  .items-cours {
     margin-top: 10px;
     width: 100%;
-    display: flex;  
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 10px;
   }
-  .item-cours{
+  .item-cours {
     background-color: #6da4aa75;
     margin-top: 10px;
     border-radius: 20px;
     margin-bottom: 20px;
     display: flex;
-    width: 90%;  
+    width: 90%;
     height: auto;
     justify-content: space-around;
     color: var(--color-black);
     /* background: rgba(123, 150, 255, 0.27); */
     border-radius: 10px;
   }
-  .item-cours div h5 span{
+  .item-cours div h5 span {
     color: var(--color-black);
     font-weight: 800;
     font-size: 12px;
   }
-  .item-cours div h5 span:hover{
+  .item-cours div h5 span:hover {
     color: var(--color-white);
   }
-  .card-image img{
+  .card-image img {
     width: 80px;
     height: 80px;
     border-radius: 50px;
@@ -466,64 +467,64 @@ color: var(--color-white);
     align-items: center;
   }
 }
-@media (min-width: 290px) and (max-width:333px ) {
-  .item-cours div ul{
-    font-size: 7px;  
+@media (min-width: 290px) and (max-width: 333px) {
+  .item-cours div ul {
+    font-size: 7px;
     width: 100%;
   }
-  .cours{
+  .cours {
     background-color: var(--color-grey);
-    margin:  10px 1%;
+    margin: 10px 1%;
     width: 98%;
     border-radius: 10px;
   }
-  .item-cours div ul li:last-child{
-    margin-left: 2px;  
+  .item-cours div ul li:last-child {
+    margin-left: 2px;
   }
-  .item-cours div h5{
+  .item-cours div h5 {
     width: 90%;
     font-size: 12px;
     font-weight: 700;
     margin-left: 10px;
     margin-bottom: 10px;
   }
-  .card-image{
+  .card-image {
     margin-right: 5px;
   }
-  .item-cours{
-    margin-top: 20px;  
-    width: 45%;  
+  .item-cours {
+    margin-top: 20px;
+    width: 45%;
   }
-  .items-cours{
+  .items-cours {
     margin-top: 10px;
     width: 100%;
-    display: flex;  
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 10px;
   }
-  .item-cours{
+  .item-cours {
     background-color: #6da4aa75;
     margin-top: 10px;
     border-radius: 20px;
     margin-bottom: 20px;
     display: flex;
-    width: 90%;  
+    width: 90%;
     height: auto;
     justify-content: space-around;
     color: var(--color-black);
     /* background: rgba(123, 150, 255, 0.27); */
     border-radius: 10px;
   }
-  .item-cours div h5 span{
+  .item-cours div h5 span {
     color: var(--color-black);
     font-weight: 800;
     font-size: 12px;
   }
-  .item-cours div h5 span:hover{
+  .item-cours div h5 span:hover {
     color: var(--color-white);
   }
-  .card-image img{
+  .card-image img {
     width: 80px;
     height: 80px;
     border-radius: 50px;
@@ -538,33 +539,33 @@ color: var(--color-white);
   width: auto;
   height: 250px;
   background: white;
-  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
   color: white;
-  box-shadow: 30px 30px rgba(0,0,0,.15);
-  
-  transition: all .4s ease;
+  box-shadow: 30px 30px rgba(0, 0, 0, 0.15);
+
+  transition: all 0.4s ease;
 }
 #tv:hover {
   border-radius: 10px;
-  box-shadow: 10px 10px rgba(0,0,0,.25);
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
 }
-.gene{
+.gene {
   margin-bottom: 70px;
   padding-top: 50px;
   /* display: flex; */
 }
-.gene h2{
+.gene h2 {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 40px;
   font-weight: 800;
   text-transform: uppercase;
 }
-.gene-info{
+.gene-info {
   display: flex;
   justify-content: space-around;
 }
-.gene-info p{
+.gene-info p {
   width: 50%;
   display: flex;
   align-items: center;
@@ -572,32 +573,32 @@ color: var(--color-white);
   font-size: 18px;
   font-weight: 600;
 }
-@media (min-width:1033px ) and (max-width: 1287px) {
+@media (min-width: 1033px) and (max-width: 1287px) {
   #tv {
     height: 180px;
   }
-  .gene-info p{
+  .gene-info p {
     width: 45%;
     font-size: 18px;
     font-weight: 600;
   }
 }
-@media (min-width: 930px) and (max-width:1033px ) {
+@media (min-width: 930px) and (max-width: 1033px) {
   #tv {
     height: 170px;
   }
-  .gene-info p{
+  .gene-info p {
     width: 45%;
     font-size: 15px;
     font-weight: 600;
   }
 }
-@media (min-width: 300px) and (max-width:830px ) {
-  #tv{
+@media (min-width: 300px) and (max-width: 830px) {
+  #tv {
     visibility: hidden;
     position: absolute;
   }
-  .gene-info p{
+  .gene-info p {
     width: 90%;
     text-align: center;
     align-items: center;
@@ -607,20 +608,21 @@ color: var(--color-white);
 }
 /* ? END GENE */
 /* ? CONTACT */
-.contact{
+.contact {
   background-color: var(--color-grey);
-  margin:  150px 50px 20px 50px;
+  margin: 150px 50px 20px 50px;
   width: 90%;
   border-radius: 10px;
   padding-bottom: 30px;
 }
-.contact h2{
+.contact h2 {
   text-align: center;
   padding-top: 40px;
   font-weight: 800;
   text-transform: uppercase;
 }
-.contact-whatsapp,.contact-gmail{
+.contact-whatsapp,
+.contact-gmail {
   width: 90%;
   background-color: var(--color-yellow-light);
   margin: 0 5%;
@@ -631,87 +633,90 @@ color: var(--color-white);
   align-items: center;
   justify-content: space-evenly;
 }
-.contact-gmail button,.contact-whatsapp button{
+.contact-gmail button,
+.contact-whatsapp button {
   border: none;
   color: var(--color-black);
   background-color: #f6d776;
   border-radius: 10px;
-  padding: 5px 10px ;
+  padding: 5px 10px;
   font-weight: 700;
 }
-.contact-gmail button:hover,.contact-whatsapp button:hover{
+.contact-gmail button:hover,
+.contact-whatsapp button:hover {
   background-color: #6da4aa;
   color: var(--color-white);
 }
-.contact-para h3{
+.contact-para h3 {
   font-weight: 700;
   font-size: 24px;
 }
-.contact-para h5{
+.contact-para h5 {
   font-weight: 600;
   font-size: 20px;
   text-transform: lowercase;
 }
-.contact-icon{
+.contact-icon {
   align-items: center;
   display: flex;
   justify-content: center;
 }
-.contact-info{
+.contact-info {
   margin-top: 40px;
 }
-.contact-paragraph h4{
+.contact-paragraph h4 {
   text-align: center;
   margin: 20px 100px;
   font-weight: 500;
 }
-@media (min-width:1033px ) and (max-width: 1287px) {
-  .contact{
-    margin:  10px 20px 20px 50px;
+@media (min-width: 1033px) and (max-width: 1287px) {
+  .contact {
+    margin: 10px 20px 20px 50px;
     width: 90%;
     border-radius: 10px;
     padding-bottom: 30px;
   }
 }
-@media (min-width: 930px) and (max-width:1033px ) {
-  .contact{
-    margin:  10px 20px 20px 50px;
+@media (min-width: 930px) and (max-width: 1033px) {
+  .contact {
+    margin: 10px 20px 20px 50px;
     width: 90%;
     border-radius: 10px;
     padding-bottom: 30px;
   }
-  .contact-gmail button,.contact-whatsapp button{
+  .contact-gmail button,
+  .contact-whatsapp button {
     border: none;
     color: var(--color-black);
     background-color: #f6d776;
     border-radius: 10px;
-    padding: 2px 5px ;
+    padding: 2px 5px;
     font-weight: 700;
     font-size: 16px;
   }
-  .contact-para h3{
+  .contact-para h3 {
     font-weight: 700;
     font-size: 20px;
   }
-  .contact-para h5{
+  .contact-para h5 {
     font-weight: 600;
     font-size: 16px;
     text-transform: lowercase;
   }
-  .contact-icon{
+  .contact-icon {
     align-items: center;
     display: flex;
     justify-content: center;
   }
 }
-@media (min-width: 300px) and (max-width:830px ) {
-  .contact{
-    margin:  10px 20px 20px 20px;
+@media (min-width: 300px) and (max-width: 830px) {
+  .contact {
+    margin: 10px 20px 20px 20px;
     width: 90%;
     border-radius: 10px;
     padding-bottom: 30px;
   }
-  .contact-info{
+  .contact-info {
     margin-top: 20px;
   }
   /* .contact-gmail button,.contact-whatsapp button{
@@ -723,13 +728,14 @@ color: var(--color-white);
     font-weight: 700;
     font-size: 16px;
   } */
-  .contact h2{
+  .contact h2 {
     text-align: center;
     padding-top: 40px;
     font-weight: 800;
     text-transform: uppercase;
   }
-  .contact-whatsapp,.contact-gmail{
+  .contact-whatsapp,
+  .contact-gmail {
     width: 96%;
     background-color: var(--color-yellow-light);
     margin: 0 2%;
@@ -740,15 +746,16 @@ color: var(--color-white);
     display: block;
     align-items: center;
   }
-  .contact-gmail button,.contact-whatsapp button{
+  .contact-gmail button,
+  .contact-whatsapp button {
     border: none;
     color: var(--color-black);
     background-color: #f6d776;
     border-radius: 10px;
-    padding: 5px 10px ;
+    padding: 5px 10px;
     font-weight: 700;
   }
-  .contact-para h3{
+  .contact-para h3 {
     font-weight: 700;
     font-size: 12px;
   }
@@ -757,47 +764,48 @@ color: var(--color-white);
     font-size: 16px;
     text-transform: lowercase;
   } */
-  .contact-icon{
+  .contact-icon {
     align-items: center;
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .contact-icon svg{
+  .contact-icon svg {
     width: 40px;
   }
-  .contact-para h3{
+  .contact-para h3 {
     visibility: hidden;
     position: absolute;
   }
-  .whatsapp-icon{
+  .whatsapp-icon {
     height: 30px;
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: 10px;
   }
-  .email-icon{
+  .email-icon {
     height: 30px;
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: 5px;
   }
-  .contact-para h5{
+  .contact-para h5 {
     font-weight: 600;
     font-size: 14px;
     margin-top: 15px;
     text-align: center;
     text-transform: lowercase;
   }
-  .contact-gmail button,.contact-whatsapp button{
+  .contact-gmail button,
+  .contact-whatsapp button {
     border: none;
     color: var(--color-black);
     background-color: #f6d776;
     border-radius: 10px;
     font-size: 15px;
-    padding: 2px 5px ;
+    padding: 2px 5px;
     font-weight: 700;
     margin-bottom: 10px;
     display: flex;
@@ -805,7 +813,7 @@ color: var(--color-white);
     width: 100%;
     margin-top: 15px;
   }
-  .contact-paragraph h4{
+  .contact-paragraph h4 {
     text-align: center;
     margin: 15px 10px;
     font-weight: 500;
@@ -816,7 +824,7 @@ color: var(--color-white);
 /* ? END CONTACT */
 /* ? Cours */
 /* * first */
-.paragraph{
+.paragraph {
   font-size: 24px;
   text-transform: uppercase;
   text-align: center;
@@ -838,19 +846,19 @@ color: var(--color-white);
   align-items: center;
   width: 100%;
   height: 15vh;
-  
+
   /* background-color: aqua; */
   margin: 0;
   justify-content: center;
 }
-.titles-cours ul{
+.titles-cours ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
-.titles-cours ul li{
+.titles-cours ul li {
   margin-right: 10px;
-  padding: 5px  10px ;
+  padding: 5px 10px;
   text-align: center;
   font-weight: 800;
   /* border: 2px black solid; */
@@ -858,7 +866,7 @@ color: var(--color-white);
   color: var(--color-white);
   background-color: var(--color-black);
 }
-.titles-cours ul li:hover{
+.titles-cours ul li:hover {
   background-color: var(--color-bleu-light);
   color: var(--color-black);
   cursor: pointer;
@@ -888,42 +896,71 @@ color: var(--color-white);
 
 /* Add align-self property to the .iteam class */
 .iteam:nth-child(odd) {
-  align-self: center; 
+  align-self: center;
 }
 
 .iteam:nth-child(even) {
-  align-self: center; 
+  align-self: center;
 }
 
 /* ... (your existing styles) */
 
-.princip  {
+.princip {
   align-items: center;
 }
-.princip p:nth-child(1){
+.princip p:nth-child(1) {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
 }
-.princip p:nth-child(2){
+.princip p:nth-child(2) {
   font-weight: 600;
-  margin: 0px 0 5px 0 ;
+  margin: 0px 0 5px 0;
 }
-.button{
+.button {
   display: flex;
   justify-content: center;
   position: fixed;
   z-index: 99;
 }
-.button button{
+.button button {
   z-index: 100;
   margin-left: 30px;
 }
-#icon{
+#icon {
   height: 30px;
 }
-.button-trans{
+.button-item {
+  margin: 10px;
   border: none;
+  position: relative;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  font-size: 18px;
+  padding: 8px ;
+  border-radius: 50%;
+  float: right;
+}
+/* .button-disper:hover{
+  background-color: red;
+}
+.button-answer:hover{
+  background-color: green;
+} */
+.button-disper{
+  padding: 8px;
+}
+.button-answer{
+  padding: 8px;
+}
+.button-trans {
+  border: none;
+  position: relative;
+  margin-top: 60vh;
+  /* padding-left: 20px; */
   border-radius: 5px;
   justify-content: center;
   align-items: center;
@@ -934,16 +971,64 @@ color: var(--color-white);
   border-radius: 50%;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: brown;
+  /* From https://css.glass */
+  background: rgba(28, 31, 96, 0.61);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.9px);
+  -webkit-backdrop-filter: blur(4.9px);
+  border: 1px solid rgba(28, 31, 96, 0.3);
 }
-#image-iteam{
-  object-fit:cover;
+#image-iteam {
+  object-fit: cover;
   width: 70%;
   height: 150px;
   background-color: #f1f1f1;
   border: 2px solid black;
   border-radius: 10px;
 }
+/* Answer design */
+.answer {
+  width: 100%;
+  background-color: #02434b;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.image-answer {
+  object-fit: contain; 
+  height: 100%; 
+  width: 100%; 
+}
+.iteams-answer {
+  background-color: var(--color-grey);
+  display: block;
+  position: relative;
+  justify-content: center;
+}
+
+.iteam-answer {
+  background-color: var(--color-bleu-light);
+  padding: 10px;
+  width: 98%;
+  min-height: 150px;
+  align-items: center;
+  margin: 10px 10px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+#image-question{
+  object-fit: cover;
+  width: 20%;
+  height: 150px;
+  background-color: #f1f1f1;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/* END Answer design */
 /* * END iteams cours */
 /* ? End Cours */
 /* ? Contact US */
@@ -956,7 +1041,6 @@ color: var(--color-white);
   font-weight: 700;
   margin: 0;
   padding: 0;
-
 }
 
 .contact-page .heading h2 span {

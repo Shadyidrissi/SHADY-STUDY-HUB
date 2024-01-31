@@ -11,6 +11,7 @@ import Page from "./pages/Page";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap';
 import Contact_page from "./Component/Contact_page";
+import Exempls from "./pages/Exempls";
 // import Button from '@mui/material/Button';
 // import ButtonGroup from '@mui/material/ButtonGroup';
 // import Box from '@mui/material/Box';
@@ -37,6 +38,7 @@ function App() {
           <Route index element={< Home/>}/>
           <Route path="/cours/:id" element={<Page />} />
           <Route path="/contact" element={<Contact_page/>} />
+          <Route path="/exempls" element={<Exempls/>} />
         {/* <Home/> */}
       </Routes>
     </BrowserRouter>

@@ -135,6 +135,11 @@ function Nav(e) {
                     FIN FORMATION
                   </a>
                 </li>
+                <li className="nav-item">
+                  <a className="nav-link " href="/exempls">
+                    EXEMPLS
+                  </a>
+                </li>
               </ul>
             </div>
           ) : (
