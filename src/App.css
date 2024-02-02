@@ -908,7 +908,16 @@ nav {
 .princip {
   align-items: center;
 }
-.princip p:nth-child(1) {
+.princi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paragraph-answer{
+  width: 40%;
+  align-items: center;
+}
+/* .princip p:nth-child(1) {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
@@ -916,7 +925,7 @@ nav {
 .princip p:nth-child(2) {
   font-weight: 600;
   margin: 0px 0 5px 0;
-}
+} */
 .button {
   display: flex;
   justify-content: center;
@@ -931,18 +940,16 @@ nav {
   height: 30px;
 }
 .button-item {
-  margin: 10px;
+  margin-left: 40px;
   border: none;
-  position: relative;
   border-radius: 5px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  text-align: center;
+  justify-content: end;
   font-size: 18px;
   padding: 8px ;
   border-radius: 50%;
   float: right;
+  height: 50px;
+  display: flex;
 }
 /* .button-disper:hover{
   background-color: red;
@@ -952,9 +959,50 @@ nav {
 } */
 .button-disper{
   padding: 8px;
+  height: 20px;
 }
 .button-answer{
   padding: 8px;
+}
+#paragraph-answer{
+  width: 60%;
+  align-items: center;
+}
+#title-question{
+  font-weight: 700;
+  color: var(--color-black);
+  font-size: 22px;
+}
+.button-iteam{
+  width: 20%;
+}
+#title-p{
+  color: var(--color-black);
+  font-size: 17px;
+  font-weight: 600;
+}
+.button-TR {
+  border: none;
+  position: relative;
+  margin-top: -8vh;
+  /* padding-left: 20px; */
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px 10px;
+  border-radius: 50%;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* From https://css.glass */
+  background: rgba(28, 31, 96, 0.61);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.9px);
+  -webkit-backdrop-filter: blur(4.9px);
+  border: 1px solid rgba(28, 31, 96, 0.3);
 }
 .button-trans {
   border: none;
@@ -989,16 +1037,35 @@ nav {
 }
 /* Answer design */
 .answer {
-  width: 100%;
-  background-color: #02434b;
-  height: 200px;
+  width: 50%;
+  background-color: var(--color-white);
+  min-height: 200px;
+  max-height: 80vh;
+  border-radius: 10px;
   overflow: hidden;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
 }
-.image-answer {
+/* .princi{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+} */
+.answer p{
+  color: black;
+  padding-left: 5px;
+  word-break: break-all;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+#image-answer {
   object-fit: contain; 
   height: 100%; 
-  width: 100%; 
+  width: 60%; 
 }
 .iteams-answer {
   background-color: var(--color-grey);
@@ -1019,9 +1086,12 @@ nav {
   display: flex;
   justify-content: space-evenly;
 }
+.image-div-answer{
+  width: 30%;
+}
 #image-question{
   object-fit: cover;
-  width: 20%;
+  width: 100%;
   height: 150px;
   background-color: #f1f1f1;
   border: 2px solid black;

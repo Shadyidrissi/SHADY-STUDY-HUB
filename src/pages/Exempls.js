@@ -82,24 +82,36 @@ const Exempls = () => {
           {isData.map((data) => (
             <div key={data.id} className="iteam-answer">
               {!data.imageQuestion == "" ? (
-                <img src={data.imageQuestion} id="image-question" alt="" />
+                <div className="image-div-answer">
+                  <img src={data.imageQuestion} id="image-question" alt="" />
+                </div>
               ) : (
-                <div style={{ position: "absolute" }}></div>
+                <div className="image-div-answer"
+                // style={{ position: "absolute" }}
+                ></div>
               )}
-              <div className="princip">
-                <p>{data.title}</p>
-                <p>{traduction ? data.quetionFR : data.questionAR}</p>
+
+                <div id='paragraph-answer'>
+                <p id="title-question">{data.title}</p>
+                <p id="title-p">{traduction ? data.quetionFR : data.questionAR}</p>
+                </div>
                 {select == data.id ? 
                 (<div className="answer">
                   <p>{data.Answer}</p>
-                  <img src={data.imageAnswer} id="image-answer" alt="" />
+                  {data.imageAnswer ?(
+                    <img src={data.imageAnswer} id="image-answer" alt="" />
+                  ):(<div style={{ position: "absolute" }}></div>)}
                   </div>) : ("")}
-                <button
-                  onClick={() => handelAnsowerShow(data, data.id)}
-                  className="button-item"
-                >
-                  <FontAwesomeIcon className="button-answer" icon={faCheck} />
-                </button>
+                <div className="button-iteam">
+                {show != true && data.id != select ? (
+                  <button
+                      onClick={() => handelAnsowerShow(data, data.id)}
+                      className="button-item"
+                    >
+                      <FontAwesomeIcon className="button-answer" icon={faCheck} />
+                    </button>
+                  ):('')}
+                
                 {show == true && data.id == select ? (
                   <>
                     <button
@@ -110,11 +122,10 @@ const Exempls = () => {
                         icon={faXmark}/>
                     </button>
                   </>
-                ) : (
-                  ""
-                )}
+                ) : ("")}
               </div>
-            </div>
+              </div>
+            
           ))}
         </div>
       </>

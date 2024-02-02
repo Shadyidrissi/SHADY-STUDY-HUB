@@ -3,17 +3,15 @@ import { useParams } from "react-router-dom";
 import Cours_Name_Data from "../Data/Cours_name_data";
 import Cours_Data from "../Data/Cours_data";
 import Nav from "../Component/Nav";
-import { ConstantColorFactor } from "three";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 
 const Page = () => {
-  const { id } = useParams();
+  // const  {id}  = useParams();
   const [cours, setCours] = useState("");
   const [isData, setData] = useState([]);
-  const [show, setShow] = useState(true);
+  // const [show, setShow] = useState(false);
   const [traduction, setTraduction] = useState(true);
 
   const handelTraduction = () => {
@@ -22,21 +20,22 @@ const Page = () => {
 
   const handleClick = (title) => {
     setCours(title);
-    const filteredData = Cours_Data.filter((item) => item.title === title);
-    setData(filteredData);
+    const filteredData = Cours_Data.filter((item) => item.title == title);
+    setData(filteredData)
   };
 
-  useEffect(() => {
-    if (id < 4) {
-      setShow(true);
-    } else {
-      setShow(false);
-    }
-  }, [id]);
+  // useEffect(() => {
+  //   if (id < 4) {
+  //     setShow(true);
+  //   } else {
+  //     setShow(false);
+  //     setData([]); // Reset isData when show is false
+  //   }
+  // }, [id]);
 
   return (
     <>
-      {!show ? (
+       {/* {!show ? (
         <div
           style={{
             color: "red",
@@ -51,7 +50,7 @@ const Page = () => {
         >
           This Id Not Defined 🚩
         </div>
-      ) : (
+      ) : ( */}
         <>
           <Nav ul="no" />
           <p className="paragraph">
@@ -61,12 +60,12 @@ const Page = () => {
             mammamamamamamamamamamamamamamammaammaammamamaamammaamam
           </p>
           <div className="button">
-            {!cours ? (
+            {cours=='' ? (
               ""
             ) : (
               <button
                 onClick={() => handelTraduction()}
-                className="button-trans"
+                className="button-TR"
               >
                 <FontAwesomeIcon style={{color:'white'}} id="icon"  icon={faLanguage} />
               </button>
@@ -75,29 +74,31 @@ const Page = () => {
           <div className="titles-cours">
             {Cours_Name_Data.map((i) => (
               <ul key={i.id}>
-                <li key={i.id} onClick={() => handleClick(i.cours, i.id)}>
+                <li key={i.id} onClick={() => handleClick(i.cours)}>
                   {i.cours}
                 </li>
               </ul>
             ))}
           </div>
           <div className="iteams">
-            {isData.map((data) => (
-              <div key={data.id} className="iteam">
-                {!data.image == "" ? (
-                  <img src={data.image} id="image-iteam" alt="" />
-                ) : (
-                  <div style={{ position: "absolute" }}></div>
-                )}
-                <div className="princip">
-                  <p>{data.title}</p>
-                  <p>{traduction ? data.Freanch : data.Arabic}</p>
+            {isData ?(
+              isData.map((data) => (
+                <div key={data.id} className="iteam">
+                  <h3>{data.title}</h3>
+                  {!data.image == "" ? (
+                    <img src={data.image} id="image-iteam" alt="" />
+                  ) : (
+                    <div style={{ position: "absolute" }}></div>
+                  )}
+                  <div className="princip">
+                    <p>{traduction ? data.Freanch : data.Arabic}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))
+            ):('WAIT')}
           </div>
         </>
-      )}
+      {/* )} */}
     </>
   );
 };
