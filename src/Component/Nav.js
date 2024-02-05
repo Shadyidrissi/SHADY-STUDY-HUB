@@ -131,7 +131,7 @@ function Nav(e) {
             >
               <ul className="navbar-nav nav-items  mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link " href="/cours/0">
+                  <a className="nav-link " href="/cours">
                     FIN FORMATION
                   </a>
                 </li>
@@ -143,7 +143,7 @@ function Nav(e) {
               </ul>
             </div>
           ) : (
-            <a href="/cours/1">
+            <a href="/cours">
               <button
                 // onClick={(e) => handlButton("cours", e)}
                 className="btn button-cours"

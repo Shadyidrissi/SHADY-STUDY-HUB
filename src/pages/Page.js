@@ -6,6 +6,8 @@ import Nav from "../Component/Nav";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLanguage } from "@fortawesome/free-solid-svg-icons";
+import ReactImageZoom from "react-image-zoom";
+
 
 const Page = () => {
   // const  {id}  = useParams();
@@ -55,9 +57,10 @@ const Page = () => {
           <Nav ul="no" />
           <p className="paragraph">
             {/* {console.log(isId)} */}
-            mammamamamamamamamamamamamamamammaammaammamamaamammaamam
-            mammamamamamamamamamamamamamamammaammaammamamaamammaamam
-            mammamamamamamamamamamamamamamammaammaammamamaamammaamam
+            This page Will find all the cours we have it on the exam FF 
+            and you will find the 
+            exempls
+
           </p>
           <div className="button">
             {cours=='' ? (
