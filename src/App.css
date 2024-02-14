@@ -1097,7 +1097,44 @@ nav {
   border: 2px solid black;
   border-radius: 10px;
 }
-
+@media (min-width: 300px) and (max-width: 830px) {
+  .iteams {
+    display: block;
+  }
+  .iteam {
+    width: 90%;
+    margin: 10px 5%;
+  }
+  .iteam-answer {
+    width: 95%;
+    margin: 10px 2.5%;
+    display: block;
+  }
+  .answer {
+    width: 100%;
+    background-color: var(--color-white);
+    min-height: 200px;
+    max-height: 80vh;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+  }
+  #paragraph-answer{
+    width: 100%;
+    align-items: center;
+  }
+  .button-iteam{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
 /* END Answer design */
 /* * END iteams cours */
 /* ? End Cours */
