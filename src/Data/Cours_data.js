@@ -2,18 +2,29 @@ const Cours_Data = [
   {
     id: "0",
     title: "Réseau Aéraulique",
+<<<<<<< HEAD
     Freanch: `la relation de Surface 
      DE GAIN CYCLAIRE: s=π*D*D/4 
      DE GAIN RECTONGULAIRE : s = l x L`,
     Arabic: "العربية لغةٌ رسمية في كل دول الوطن العربي إضافة إلى كونها لغ",
     image:
       "",
+=======
+    Freanch: "heloo world how are you bro i hope are you fine",
+    Arabic: "العربية لغةٌ رسمية في كل دول الوطن العربي إضافة إلى كونها لغ",
+    image:
+      "https://preview.redd.it/nayqnqi3cwec1.jpeg?width=640&crop=smart&auto=webp&s=17f9cd07d81ff1844a89c4b3b437a0ab2085b56a",
+>>>>>>> b1d7e52 (hhh)
   },
   {
     id: "1",
     title: "Réseau Aéraulique",
     Freanch:
+<<<<<<< HEAD
       "La masse volumique : Qv = s * v  | Qv => m3/s",
+=======
+      "heloo world how xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxcccccc you bro i hope are you fine",
+>>>>>>> b1d7e52 (hhh)
     Arabic: "heloo world how are you bro i xxxx are you fine",
     image: "",
   },
@@ -21,7 +32,11 @@ const Cours_Data = [
     id: "2",
     title: "Réseau Aéraulique",
     Freanch:
+<<<<<<< HEAD
       "Vitess Reel v = Qv * 4 / π * D*D",
+=======
+      "heloo world how xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxcccccc you bro i hope are you fine",
+>>>>>>> b1d7e52 (hhh)
     Arabic: "heloo world how are you bro i xxxx are you fine",
     image: "",
   },
@@ -29,7 +44,11 @@ const Cours_Data = [
     id: "3",
     title: "Réseau Aéraulique",
     Freanch:
+<<<<<<< HEAD
       "Hours <-> Secends : s = h*3600 | h = s/3600",
+=======
+      "heloo world how xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxcccccc you bro i hope are you fine",
+>>>>>>> b1d7e52 (hhh)
     Arabic: "heloo world how are you bro i xxxx are you fine",
     image: "",
   },
@@ -37,7 +56,11 @@ const Cours_Data = [
     id: "4",
     title: "Réseau Aéraulique",
     Freanch:
+<<<<<<< HEAD
       "Pa <-> mmCE :  Pa = mmCE*10 | mmCE = Pa/10",
+=======
+      "heloo world how xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxcccccc you bro i hope are you fine",
+>>>>>>> b1d7e52 (hhh)
     Arabic: "heloo world how are you bro i xxxx are you fine",
     image: "",
   },

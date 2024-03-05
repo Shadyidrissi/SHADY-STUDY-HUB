@@ -2,12 +2,22 @@
 * {
   a {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+<<<<<<< HEAD
       sans-serif;
     text-decoration: none;
     color: black;
     cursor: pointer;
   }
   a:hover {
+=======
+      sans-serif; 
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    
+  }
+  a:hover { 
+>>>>>>> b1d7e52 (hhh)
     color: white;
   }
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
